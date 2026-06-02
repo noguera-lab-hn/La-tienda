@@ -102,8 +102,7 @@ def registrar_producto():
         print("Error al guardar.")
 
 
-def listar_productos():
-    """Muestra todos los productos en formato tabla."""
+def listar_productos(): # Muestra todos los productos en formato tabla
     productos = obtener_productos()
     
     # Si la lista está vacía (not productos = True cuando está vacía)
