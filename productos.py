@@ -1,6 +1,6 @@
 """
 Módulo: productos.py
-Autores: [Nombres de los 3 estudiantes]
+Autores: [Francis Asaf Estrada Francia]
 Fecha: 2026-05-06
 Descripción: Funciones para gestionar productos (CRUD, stock, búsquedas)
 """
@@ -17,21 +17,18 @@ ARCHIVO_PRODUCTOS = "productos.json"
 # ============================================
 
 def obtener_productos():
-    """Devuelve la lista de productos desde el archivo JSON."""
     # Llama a cargar_datos pasándole el nombre del archivo
     # Lo que devuelva cargar_datos (lista de productos) lo devuelve
     return cargar_datos(ARCHIVO_PRODUCTOS)
 
 
 def guardar_productos(productos):
-    """Guarda la lista de productos en el archivo JSON."""
     # Llama a guardar_datos con el nombre del archivo y los datos
     # Devuelve True si se guardó bien, False si hubo error
     return guardar_datos(ARCHIVO_PRODUCTOS, productos)
 
 
 def producto_existe(codigo, productos):
-    """Verifica si un código de producto ya existe en la lista."""
     # FOR: Itera sobre cada producto en la lista de productos
     for p in productos:
         # Si el código del producto actual es igual al código buscado
@@ -47,7 +44,6 @@ def producto_existe(codigo, productos):
 # ============================================
 
 def registrar_producto():
-    """Registra un nuevo producto en el inventario."""
     print("\n--- REGISTRAR NUEVO PRODUCTO ---")
     
     # Obtiene la lista actual de productos para verificar códigos únicos
@@ -101,7 +97,7 @@ def registrar_producto():
     # Intentamos guardar en el archivo
     if guardar_productos(productos):
         # f"texto {variable}" permite insertar variables dentro del texto
-        print(f"✅ Producto {nombre} registrado con éxito.")
+        print(f"Producto {nombre} registrado con éxito.")
     else:
         print("Error al guardar.")
 
@@ -132,11 +128,10 @@ def listar_productos():
 
 
 def buscar_producto():
-    """Busca producto por código o nombre (búsqueda parcial, sin distinguir mayúsculas)."""
     productos = obtener_productos()
     
     if not productos:
-        print("📭 No hay productos.")
+        print("No hay productos.")
         return
     
     # Pedir búsqueda y convertir a minúsculas para que no distinga mayúsculas
@@ -154,7 +149,7 @@ def buscar_producto():
     
     # Mostrar resultados
     if resultados:
-        print("\n🔍 Resultados encontrados:")
+        print("\nResultados encontrados:")
         for r in resultados:
             print(f"{r['codigo']} - {r['nombre']} | Precio: Q{r['precio']} | Stock: {r['stock']}")
     else:
@@ -162,7 +157,6 @@ def buscar_producto():
 
 
 def actualizar_precio():
-    """Actualiza el precio de un producto."""
     productos = obtener_productos()
     codigo = input("Código del producto: ").strip().upper()
     
@@ -186,7 +180,6 @@ def actualizar_precio():
 
 
 def ajustar_stock():
-    """Ajusta stock (sumar o restar unidades, con motivo)."""
     productos = obtener_productos()
     codigo = input("Código del producto: ").strip().upper()
     
@@ -221,14 +214,13 @@ def ajustar_stock():
             
             # Guardar cambios
             if guardar_productos(productos):
-                print(f"✅ Stock actualizado. Nuevo stock: {p['stock']}")
+                print(f"Stock actualizado. Nuevo stock: {p['stock']}")
             return  # Salir porque ya procesamos
     
     print("Producto no encontrado.")
 
 
 def eliminar_producto():
-    """Elimina un producto solo si no tiene ventas registradas."""
     # Importamos dentro de la función para evitar import circular
     # Esto es porque productos.py y ventas.py se necesitan mutuamente
     from ventas import obtener_ventas
@@ -271,8 +263,7 @@ def eliminar_producto():
         print("Error al guardar.")
 
 
-def productos_bajo_stock():
-    """Muestra productos con stock actual menor o igual al stock mínimo."""
+def productos_bajo_stock(): # Muestra productos con stock actual menor o igual al stock mínimo
     productos = obtener_productos()
     
     # Comprensión de lista: forma compacta de crear una lista filtrada
@@ -288,7 +279,7 @@ def productos_bajo_stock():
         for p in bajos:
             print(f"{p['codigo']} - {p['nombre']}: Stock {p['stock']} (Mínimo {p['stock_minimo']})")
     else:
-        print("✅ Todos los productos tienen stock adecuado.")
+        print("Todos los productos tienen stock adecuado.")
     
     # Devolvemos la lista por si se necesita (para reportes)
     return bajos
