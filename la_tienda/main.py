@@ -3,11 +3,16 @@
 #                                 MAIN.PY
 # ==============================================================================
 
-# 1. Importamos los 4 módulos principales
-from modulos import productos
-from modulos import clientes
-from modulos import ventas
-from modulos import reportes
+import sys
+# 1. TRUCO DE RUTAS: Le decimos a Python que incluya la carpeta "modulos" 
+# en su radar. Así, los archivos internos podrán encontrarse entre sí.
+sys.path.append("modulos")
+
+# 2. Ahora importamos los 4 módulos principales directamente
+import productos
+import clientes
+import ventas
+import reportes
 
 def menu_principal():
     # Este bucle mantiene vivo todo el sistema de Doña Marta
@@ -45,6 +50,6 @@ def menu_principal():
         else:
             print("Opción inválida. Por favor, seleccione un número del 0 al 4.")
 
-# 2. Punto de arranque del programa
+# 3. Punto de arranque del programa
 if __name__ == "__main__":
     menu_principal()

@@ -12,7 +12,7 @@ from datetime import datetime
 # ============================================
 
 def validar_email(email):
-    """Validación básica de email: debe tener @ y un punto después."""
+    # Validación básica de email: debe tener @ y un punto después.
     # "in" verifica si un texto contiene otro texto
     # Ejemplo: "@" in "maria@gmail.com" es True porque el @ está dentro
     # and significa que las DOS condiciones deben cumplirse
@@ -24,10 +24,10 @@ def validar_email(email):
 
 
 def validar_entero_positivo(texto):
-    """
-    Pide un número entero positivo al usuario.
-    Sigue preguntando hasta que ingrese un número válido.
-    """
+    
+    # Pide un número entero positivo al usuario.
+    # Sigue preguntando hasta que ingrese un número válido.
+    
     # while True = bucle infinito. Solo sale con return
     while True:
         # TRY: Intentamos convertir a número
@@ -51,10 +51,10 @@ def validar_entero_positivo(texto):
 
 
 def validar_float_positivo(texto):
-    """
-    Pide un número decimal positivo al usuario (ej: 6.50, 12.99).
-    Sigue preguntando hasta que ingrese un número válido.
-    """
+    
+    # Pide un número decimal positivo al usuario (ej: 6.50, 12.99).
+    # Sigue preguntando hasta que ingrese un número válido.
+    
     while True:
         try:
             # float() convierte a número decimal (permite punto decimal)
@@ -74,7 +74,7 @@ def validar_float_positivo(texto):
 # ============================================
 
 def obtener_fecha_actual():
-    """Devuelve la fecha y hora actual como string."""
+    # Devuelve la fecha y hora actual como string.
     # datetime.now() obtiene la fecha y hora exacta del computador en este momento
     ahora = datetime.now()
     
@@ -90,7 +90,7 @@ def obtener_fecha_actual():
 
 
 def obtener_fecha_solo_dia():
-    """Devuelve solo la fecha actual (año-mes-día) para comparar ventas del día."""
+    # Devuelve solo la fecha actual (año-mes-día) para comparar ventas del día.
     ahora = datetime.now()
     # Solo devuelve la fecha sin la hora
     # Resultado: "2026-05-27"
