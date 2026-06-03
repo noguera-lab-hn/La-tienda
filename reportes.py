@@ -1,30 +1,11 @@
-# ==============================================================================
-#                           MODULO DE REPORTES
-#                       BRYAN jOSUE NOGUERA MOLINA
-#                               2/6/2026
-# ==============================================================================
 
-import json
 from datetime import datetime
+from archivos import cargar_datos
 
-# --------------------------------
-# FUNCIONES AUXILIARES DE LECTURA
-# --------------------------------
-
-def cargar_datos_json(ruta_archivo):
-    try:
-        with open(ruta_archivo, "r", encoding="utf-8") as archivo:
-            return json.load(archivo)
-    except FileNotFoundError:
-        return []
-
-
-# REPORTES DE LA FASE 1 (Stock e Historial)
-# -------------------------------------------
 
 def reporte_stock_bajo():
     print("\n--- REPORTE: PRODUCTOS CON STOCK BAJO ---")
-    productos = cargar_datos_json("datos/productos.json")
+    productos = cargar_datos("datos/productos.json")
     hay_alertas = False
     
     for p in productos:
@@ -40,7 +21,7 @@ def reporte_stock_bajo():
 def reporte_historial_cliente():
     print("\n--- REPORTE: HISTORIAL DE COMPRAS DE CLIENTE ---")
     nit_buscar = input("Ingrese el NIT del cliente a consultar: ").strip()
-    ventas = cargar_datos_json("datos/ventas.json")
+    ventas = cargar_datos("datos/ventas.json")
     
     total_gastado = 0
     compras_realizadas = 0
@@ -65,12 +46,10 @@ def reporte_historial_cliente():
         print(f"RESUMEN: Este cliente ha realizado {compras_realizadas} compras por un total de Q{total_gastado}")
 
 
-# REPORTES DE LA FASE 2 (Fechas)
-# ---------------------------------
 
 def reporte_ventas_dia():
     print("\n--- REPORTE: VENTAS DEL DÍA ---")
-    ventas = cargar_datos_json("datos/ventas.json")
+    ventas = cargar_datos("datos/ventas.json")
     fecha_hoy_texto = datetime.now().strftime("%Y-%m-%d")
     
     total_dinero = 0
@@ -98,7 +77,7 @@ def reporte_rango_fechas():
         fecha_inicio_obj = datetime.strptime(fecha_inicio_txt, formato)
         fecha_fin_obj = datetime.strptime(fecha_fin_txt, formato)
         
-        ventas = cargar_datos_json("datos/ventas.json")
+        ventas = cargar_datos("datos/ventas.json")
         total_dinero = 0
         total_transacciones = 0
         
@@ -120,53 +99,41 @@ def reporte_rango_fechas():
         print("Error: El formato de la fecha es incorrecto. Debe ser AAAA-MM-DD.")
 
 
-# REPORTES DE LA FASE 3 (Análisis y Cierre)
-# ---------------------------------------------
 
 def reporte_top_5_productos():
     print("\n--- REPORTE: TOP 5 PRODUCTOS MÁS VENDIDOS ---")
-    ventas = cargar_datos_json("datos/ventas.json")
+    ventas = cargar_datos("datos/ventas.json")
     
     if not ventas:
         print("Aún no hay ventas registradas.")
         return
         
-    # Usamos un diccionario vacío como nuestra libreta de apuntes para agrupar
-    # Se verá así: {"P001": 5, "P002": 10}
     conteo_productos = {}
-    nombres_productos = {} # Para recordar el nombre de cada código
+    nombres_productos = {} 
     
     for venta in ventas:
         for item in venta["items"]:
             codigo = item["codigo"]
             cantidad = item["cantidad"]
             
-            # Si el código ya está en nuestra libreta, le sumamos la nueva cantidad
             if codigo in conteo_productos:
                 conteo_productos[codigo] += cantidad
-            # Si es la primera vez que vemos este código, lo creamos
             else:
                 conteo_productos[codigo] = cantidad
                 nombres_productos[codigo] = item["nombre"]
                 
-    # Transformamos nuestra libreta en una lista para poder ordenarla
-    # Cada elemento será una pequeña lista así: [codigo, cantidad_total]
     lista_conteo = []
     for codigo in conteo_productos:
         lista_conteo.append([codigo, conteo_productos[codigo]])
         
-    # Función auxiliar muy sencilla que le dice a Python cómo ordenar nuestra lista
-    # Retorna la posición 1 (la cantidad_total) para usarla como criterio
     def criterio_de_orden(elemento):
         return elemento[1]
         
-    # Ordenamos la lista usando nuestro criterio, y reverse=True para que sea de mayor a menor
     lista_conteo.sort(key=criterio_de_orden, reverse=True)
     
     print(f"{'POSICIÓN':<10} | {'CÓDIGO':<8} | {'NOMBRE':<20} | {'UNIDADES VENDIDAS'}")
     print("-" * 65)
     
-    # Recorremos solo los primeros 5 elementos usando un recorte de lista [:5]
     posicion = 1
     for item in lista_conteo[:5]:
         codigo_ganador = item[0]
@@ -179,13 +146,12 @@ def reporte_top_5_productos():
 
 def reporte_cierre_caja():
     print("\n--- REPORTE: CIERRE DE CAJA DEL DÍA ---")
-    ventas = cargar_datos_json("datos/ventas.json")
+    ventas = cargar_datos("datos/ventas.json")
     fecha_hoy = datetime.now().strftime("%Y-%m-%d")
     
     total_dinero = 0
     total_transacciones = 0
     
-    # Reutilizamos la lógica del Top 5 para saber qué se vendió específicamente hoy
     productos_hoy = {}
     
     for venta in ventas:
@@ -206,7 +172,6 @@ def reporte_cierre_caja():
         print("No se registraron ventas en el día de hoy.")
         return
         
-    # Calculamos el ticket promedio (Total de dinero dividido entre la cantidad de facturas)
     ticket_promedio = round(total_dinero / total_transacciones, 2)
     
     print("=" * 50)
@@ -224,8 +189,6 @@ def reporte_cierre_caja():
 
 
 
-# MENÚ PRINCIPAL DEL MÓDULO DE REPORTES
-# --------------------------------------
 
 def modulo_reportes():
     while True:
