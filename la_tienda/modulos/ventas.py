@@ -1,10 +1,23 @@
-
+#               MODULO DE VENTAS
+#            Bryan Josue Noguera Molina
+#                   23/5/2026
 import os
 from datetime import datetime
 from archivos import cargar_datos, guardar_datos
 
 
 def generar_factura_txt(venta_final):
+    
+    # Genera un archivo de texto plano (.txt) que sirve como comprobante o factura física de la venta realizada, 
+    # creando la carpeta 'facturas' si esta no existe.
+    
+    # Recibe:
+        # venta_final (dict): Un diccionario que contiene todos los datos de la venta confirmada 
+                            # (ID, fecha, cliente, productos llevados, subtotales y total).
+        
+    # Devuelve:
+        # Nada (crea y guarda el archivo en el sistema e imprime un mensaje en consola).
+    
     if not os.path.exists("facturas"):
         os.makedirs("facturas")
         
@@ -34,6 +47,17 @@ def generar_factura_txt(venta_final):
 
 
 def iniciar_nueva_venta():
+    
+    # Inicia el proceso interactivo para registrar una nueva venta. Permite al usuario gestionar un carrito de compras 
+    # (agregar o quitar productos), calcula automáticamente los totales e impuestos (IVA del 12%), descuenta el stock 
+    # del inventario y guarda la transacción final.
+    
+    # Recibe:
+        # Nada (interactúa con el usuario a través de la consola).
+        
+    # Devuelve:
+        # Nada (completa o cancela la venta y termina su ejecución).
+    
     print("--- INICIANDO NUEVA VENTA ---")
     
     productos = cargar_datos("datos/productos.json")

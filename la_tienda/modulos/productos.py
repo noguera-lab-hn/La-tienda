@@ -1,17 +1,48 @@
-
+#               MODULO DE VENTAS
+#           Francis Asaf Estrada Francia
+#                   2026-05-07
 from archivos import cargar_datos, guardar_datos
 from utilidades import validar_entero_positivo, validar_float_positivo
-
 ARCHIVO_PRODUCTOS = "datos/productos.json"
 
 
 def obtener_productos():
+    
+    # Carga la lista de productos desde el archivo JSON de inventario.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # list: Una lista de diccionarios con la información de los productos registrados.
+    
     return cargar_datos(ARCHIVO_PRODUCTOS)
 
+
 def guardar_productos(productos):
+    
+    # Sobrescribe el archivo de inventario con la lista actualizada de productos.
+    
+    # Recibe:
+        # productos (list): Lista de diccionarios con los productos a guardar.
+        
+    # Devuelve:
+        # bool: True si se guardaron los datos correctamente, False si ocurrió un error.
+    
     return guardar_datos(ARCHIVO_PRODUCTOS, productos)
 
+
 def producto_existe(codigo, productos):
+    
+    # Verifica si un código de producto ya se encuentra registrado en el inventario.
+    
+    # Recibe:
+        # codigo (str): El código del producto a buscar.
+        # productos (list): La lista actual de productos registrados.
+        
+    # Devuelve:
+        # bool: True si el código ya existe, False en caso contrario.
+    
     for p in productos:
         if p["codigo"] == codigo:
             return True
@@ -19,6 +50,15 @@ def producto_existe(codigo, productos):
 
 
 def registrar_producto():
+    
+    # Solicita al usuario los datos necesarios para crear y guardar un nuevo producto en el inventario.
+    
+    # Recibe:
+        # Nada (interactúa directamente con el usuario por consola).
+        
+    # Devuelve:
+        # Nada.
+    
     print("\n--- REGISTRAR NUEVO PRODUCTO ---")
     
     productos = obtener_productos()
@@ -53,6 +93,15 @@ def registrar_producto():
 
 
 def listar_productos():
+    
+    # Muestra en pantalla una tabla formateada con todos los productos registrados en el inventario.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (imprime la tabla en la consola).
+    
     productos = obtener_productos()
     
     if not productos:
@@ -70,6 +119,15 @@ def listar_productos():
 
 
 def buscar_producto():
+    
+    # Permite al usuario buscar productos por su código o nombre y muestra las coincidencias.
+    
+    # Recibe:
+        # Nada (solicita el término de búsqueda por consola).
+        
+    # Devuelve:
+        # Nada (imprime los resultados encontrados en la consola).
+    
     productos = obtener_productos()
     
     if not productos:
@@ -92,6 +150,15 @@ def buscar_producto():
 
 
 def actualizar_precio():
+    
+    # Solicita el código de un producto y permite modificar su precio actual.
+    
+    # Recibe:
+        # Nada (interactúa con el usuario por consola).
+        
+    # Devuelve:
+        # Nada.
+    
     productos = obtener_productos()
     codigo = input("Código del producto: ").strip().upper()
     
@@ -110,6 +177,15 @@ def actualizar_precio():
 
 
 def ajustar_stock():
+    
+    # Permite sumar unidades (compra), restar unidades (merma) o modificar el stock mínimo de un producto específico.
+    
+    # Recibe:
+        # Nada (interactúa con el usuario por consola).
+        
+    # Devuelve:
+        # Nada.
+    
     productos = obtener_productos()
     codigo = input("Código del producto: ").strip().upper()
     
@@ -152,6 +228,15 @@ def ajustar_stock():
 
 
 def eliminar_producto():
+    
+    # Elimina un producto del inventario mediante su código, validando antes que no tenga ventas registradas.
+    
+    # Recibe:
+        # Nada (interactúa con el usuario por consola).
+        
+    # Devuelve:
+        # Nada.
+    
     productos = obtener_productos()
     
     if not productos:
@@ -187,6 +272,15 @@ def eliminar_producto():
 
 
 def productos_bajo_stock():
+    
+    # Identifica y muestra los productos cuyo stock actual es menor o igual a su stock mínimo configurado.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # list: Una lista con los diccionarios de los productos que tienen el stock bajo.
+    
     productos = obtener_productos()
     
     bajos = [p for p in productos if p["stock"] <= p["stock_minimo"]]
@@ -201,8 +295,16 @@ def productos_bajo_stock():
     return bajos
 
 
-
 def modulo_productos():
+    
+    # Muestra el menú interactivo para acceder a las opciones de gestión de inventario y maneja la elección del usuario.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (mantiene al usuario en un bucle hasta que decida salir).
+    
     while True:
         print("\n=== MÓDULO DE INVENTARIO Y PRODUCTOS ===")
         print("1. Registrar producto nuevo")

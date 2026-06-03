@@ -1,8 +1,68 @@
 [
     {
-        "nit": "1245525",
-        "nombre": "Pablito",
-        "telefono": "38548394",
-        "email": "otroemailrandom@gmail.com"
+        "nit": "13425691",
+        "nombre": "Angelito",
+        "telefono": "23332541",
+        "email": "angelito12@gmail.com"
+    },
+    {
+        "nit": "16321693",
+        "nombre": "Francis",
+        "telefono": "35897031",
+        "email": "franciestrada@gmail.com"
+    },
+    {
+        "nit": "33241652",
+        "nombre": "Bryan Noguera",
+        "telefono": "23456757",
+        "email": "bryannoguera1@gmail.com"
+    },
+    {
+        "nit": "23454432",
+        "nombre": "Angel David",
+        "telefono": "34556235",
+        "email": "angeldavid333@gmail.com"
+    },
+    {
+        "nit": "11345267",
+        "nombre": "Daniel Adrian",
+        "telefono": "23425617",
+        "email": "danieladrian12@gmail.com"
+    },
+    {
+        "nit": "24567783",
+        "nombre": "Daniela Hortensia",
+        "telefono": "97073858",
+        "email": "danielahortensia14@gmail.com"
+    },
+    {
+        "nit": "89678856",
+        "nombre": "Maria Hortensia",
+        "telefono": "34234456",
+        "email": "mariahortensia15@gmail.com"
+    },
+    {
+        "nit": "14324454",
+        "nombre": "Eduardo Perez",
+        "telefono": "23435567",
+        "email": "eduardoperez1@gmail.com"
+    },
+    {
+        "nit": "78564890",
+        "nombre": "Rebeca Gomez",
+        "telefono": "34567234",
+        "email": "rebecagomez12@gmail.com"
+    },
+    {
+        "nit": "57689985",
+        "nombre": "Pablo Barrios",
+        "telefono": "56747789",
+        "email": "pablobarrios19@gmail.com"
+    },
+    {
+        "nit": "89005768",
+        "nombre": "Pao Naomi",
+        "telefono": "56748893",
+        "email": "paonaomi69@gmail.com"
     }
 ]

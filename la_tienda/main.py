@@ -7,6 +7,16 @@ import ventas
 import reportes
 
 def menu_principal():
+    
+    # Muestra el menú principal del sistema POS 'La Tienda' y dirige al usuario 
+    # hacia el módulo seleccionado (Productos, Clientes, Ventas o Reportes).
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (mantiene al usuario en un bucle principal hasta que decida cerrar el sistema).
+    
     while True:
         print("\n" + "SISTEMA POS 'LA TIENDA' - MENÚ PRINCIPAL")
         print("1. Módulo de Productos (Inventario)")

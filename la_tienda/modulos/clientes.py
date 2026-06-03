@@ -1,6 +1,20 @@
+#               MODULO DE VENTAS
+#           Angel Adolfo Colop Pastor
+#                   2026-05-07
 from archivos import cargar_datos, guardar_datos
 
 def registrar_cliente():
+    
+    # Solicita los datos de un nuevo cliente (NIT, Nombre, Teléfono, Correo),
+    # valida que el NIT no esté duplicado ni el correo tenga formato inválido,
+    # y los guarda en el registro de clientes.
+    
+    # Recibe:
+        # Nada (interactúa directamente con el usuario por consola).
+        
+    # Devuelve:
+        # Nada.
+    
     clientes = cargar_datos("datos/clientes.json")
 
     print("\n--- INGRESE LOS DATOS DEL CLIENTE ---")
@@ -36,6 +50,16 @@ def registrar_cliente():
 
 
 def buscar_cliente():
+    
+    # Busca un cliente en el registro a partir de su Nombre o su NIT y muestra
+    # sus datos en pantalla si coincide.
+    
+    # Recibe:
+        # Nada (solicita el término de búsqueda por consola).
+        
+    # Devuelve:
+        # Nada (imprime los resultados directamente en la consola).
+    
     clientes = cargar_datos("datos/clientes.json")
     
     if not clientes:
@@ -63,6 +87,16 @@ def buscar_cliente():
 
 
 def editar_cliente():
+    
+    # Busca un cliente por su NIT y permite actualizar su teléfono y correo electrónico.
+    # Si el usuario deja el espacio en blanco, se conserva el dato anterior.
+    
+    # Recibe:
+        # Nada (interactúa con el usuario por consola).
+        
+    # Devuelve:
+        # Nada.
+    
     clientes = cargar_datos("datos/clientes.json")
     
     if not clientes:
@@ -103,6 +137,16 @@ def editar_cliente():
 
 
 def eliminar_cliente():
+    
+    # Elimina a un cliente del registro mediante su NIT, verificando previamente
+    # que no posea ningún historial de ventas vinculado en el sistema.
+    
+    # Recibe:
+        # Nada (solicita el NIT por consola al usuario).
+        
+    # Devuelve:
+        # Nada.
+    
     clientes = cargar_datos("datos/clientes.json")
     
     if not clientes:
@@ -138,6 +182,16 @@ def eliminar_cliente():
 
 
 def listar_clientes():
+    
+    # Muestra en pantalla una tabla formateada con la lista de todos los clientes
+    # registrados en el sistema.
+    
+    # Recibe:
+       #  Nada.
+        
+    # Devuelve:
+        # Nada (imprime la lista en la consola).
+    
     lista = cargar_datos("datos/clientes.json")
 
     if not lista:
@@ -153,6 +207,16 @@ def listar_clientes():
 
 
 def modulo_clientes():
+    
+    # Muestra el menú interactivo para la gestión de clientes y coordina las llamadas
+    # a las funciones de registrar, buscar, editar, eliminar y listar.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (mantiene el ciclo hasta que el usuario decida regresar al menú principal).
+    
     while True:
         print("\n=== MÓDULO DE CLIENTES ===")
         print("1. Registrar cliente nuevo")

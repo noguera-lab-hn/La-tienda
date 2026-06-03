@@ -1,9 +1,17 @@
-
 from datetime import datetime
 from archivos import cargar_datos
 
 
 def reporte_stock_bajo():
+    
+    # Revisa el inventario y muestra en pantalla los productos cuyo stock actual es menor o igual al permitido.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (imprime los resultados directamente en la consola).
+    
     print("\n--- REPORTE: PRODUCTOS CON STOCK BAJO ---")
     productos = cargar_datos("datos/productos.json")
     hay_alertas = False
@@ -18,7 +26,17 @@ def reporte_stock_bajo():
         print("Todo está en orden. Ningún producto tiene stock bajo.")
     print("-" * 45)
 
+
 def reporte_historial_cliente():
+    
+    # Solicita el NIT de un cliente y muestra todas las compras que ha realizado, los productos llevados y el total gastado.
+    
+    # Recibe:
+        # Nada (solicita el NIT al usuario durante la ejecución).
+        
+    # Devuelve:
+        # Nada (imprime el historial y el resumen financiero en la consola).
+    
     print("\n--- REPORTE: HISTORIAL DE COMPRAS DE CLIENTE ---")
     nit_buscar = input("Ingrese el NIT del cliente a consultar: ").strip()
     ventas = cargar_datos("datos/ventas.json")
@@ -46,8 +64,16 @@ def reporte_historial_cliente():
         print(f"RESUMEN: Este cliente ha realizado {compras_realizadas} compras por un total de Q{total_gastado}")
 
 
-
 def reporte_ventas_dia():
+    
+    # Calcula y muestra el total de ingresos y la cantidad de transacciones realizadas en el día actual.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (imprime los totales del día en la consola).
+    
     print("\n--- REPORTE: VENTAS DEL DÍA ---")
     ventas = cargar_datos("datos/ventas.json")
     fecha_hoy_texto = datetime.now().strftime("%Y-%m-%d")
@@ -65,7 +91,17 @@ def reporte_ventas_dia():
     print(f"Monto total vendido: Q{total_dinero}")
     print("-" * 40)
 
+
 def reporte_rango_fechas():
+    
+    # Solicita una fecha de inicio y una de fin, filtrando las ventas para mostrar el total de ingresos en ese periodo.
+    
+    # Recibe:
+        # Nada (solicita las fechas por consola al usuario).
+        
+    # Devuelve:
+        # Nada (imprime el resumen del rango de fechas en la consola).
+    
     print("\n--- REPORTE: VENTAS POR RANGO DE FECHAS ---")
     print("Formato requerido: AAAA-MM-DD (Ejemplo: 2026-05-01)")
     
@@ -99,8 +135,16 @@ def reporte_rango_fechas():
         print("Error: El formato de la fecha es incorrecto. Debe ser AAAA-MM-DD.")
 
 
-
 def reporte_top_5_productos():
+    
+    # Procesa el registro de ventas para determinar cuáles son los 5 productos con mayor cantidad de unidades vendidas.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (imprime una tabla con el Top 5 en la consola).
+    
     print("\n--- REPORTE: TOP 5 PRODUCTOS MÁS VENDIDOS ---")
     ventas = cargar_datos("datos/ventas.json")
     
@@ -145,6 +189,15 @@ def reporte_top_5_productos():
 
 
 def reporte_cierre_caja():
+    
+    # Genera un desglose completo del día, incluyendo transacciones, ingresos totales, ticket promedio y mercadería vendida.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (imprime el resumen financiero del cierre de caja en la consola).
+    
     print("\n--- REPORTE: CIERRE DE CAJA DEL DÍA ---")
     ventas = cargar_datos("datos/ventas.json")
     fecha_hoy = datetime.now().strftime("%Y-%m-%d")
@@ -188,9 +241,16 @@ def reporte_cierre_caja():
     print("=" * 50)
 
 
-
-
 def modulo_reportes():
+    
+    # Muestra el menú interactivo para acceder a los distintos reportes del sistema y gestiona la elección del usuario.
+    
+    # Recibe:
+        # Nada.
+        
+    # Devuelve:
+        # Nada (mantiene al usuario en un bucle hasta que decida salir).
+    
     while True:
         print("\n=== MÓDULO DE REPORTES ===")
         print("1. Top 5 productos más vendidos")

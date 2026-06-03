@@ -104,5 +104,22 @@
         "subtotal": 13.0,
         "iva": 1.56,
         "total": 14.56
+    },
+    {
+        "id_venta": "V0006",
+        "fecha": "2026-06-03 09:27:01",
+        "nit_cliente": "12355535",
+        "items": [
+            {
+                "codigo": "P067",
+                "nombre": "Jabón de Barra para Lavandería 350g",
+                "cantidad": 3,
+                "precio_unit": 9.0,
+                "subtotal": 27.0
+            }
+        ],
+        "subtotal": 27.0,
+        "iva": 3.24,
+        "total": 30.24
     }
 ]
