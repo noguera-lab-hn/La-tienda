@@ -1,24 +1,13 @@
-# ==============================================================================
-#                           MÓDULO DE VENTAS
-#                       BRYAN JOSUE NOGUERA MOLINA
-#                               2/6/2026
-# ==============================================================================
 
 import os
 from datetime import datetime
-# Importamos nuestro nuevo motor de base de datos
 from archivos import cargar_datos, guardar_datos
 
 
-# ==============================================================================
-# FUNCIÓN PARA CREAR EL ARCHIVO .TXT
-# ==============================================================================
 def generar_factura_txt(venta_final):
-    # Validamos si la carpeta "facturas" NO existe en la computadora
     if not os.path.exists("facturas"):
         os.makedirs("facturas")
         
-    # Armamos el nombre del archivo usando el ID de la venta.
     ruta_archivo = f"facturas/factura_{venta_final['id_venta']}.txt"
     
     try:
@@ -44,13 +33,9 @@ def generar_factura_txt(venta_final):
         print(f"Error al intentar crear el archivo físico: {e}")
 
 
-# ==============================================================================
-# FUNCIÓN PRINCIPAL DEL MÓDULO DE VENTAS
-# ==============================================================================
 def iniciar_nueva_venta():
     print("--- INICIANDO NUEVA VENTA ---")
     
-    # 1. Cargamos las bases de datos REALES usando archivos.py
     productos = cargar_datos("datos/productos.json")
     ventas = cargar_datos("datos/ventas.json")
     
@@ -70,14 +55,10 @@ def iniciar_nueva_venta():
         
         opcion = input("Elige una opción: ").strip()
         
-        # ----------------------------------------------------
-        # OPCIÓN 1: AGREGAR PRODUCTO 
-        # ----------------------------------------------------
         if opcion == "1":
             codigo_buscar = input("Ingresa el código del producto (ej. P001): ").upper().strip()
             
             producto_encontrado = None 
-            # Ahora iteramos sobre el inventario real 'productos'
             for p in productos:
                 if p["codigo"] == codigo_buscar:
                     producto_encontrado = p
@@ -109,9 +90,6 @@ def iniciar_nueva_venta():
                 except ValueError:
                     print("Error: Por favor ingresa únicamente números enteros.")
                 
-        # ----------------------------------------------------
-        # OPCIÓN 2: MOSTRAR CARRITO Y TOTALES
-        # ----------------------------------------------------
         elif opcion == "2":
             print("\n--- TU CARRITO ACTUAL ---")
             if len(carrito) == 0:
@@ -130,9 +108,6 @@ def iniciar_nueva_venta():
                 print(f"IVA (12%): Q{iva}")
                 print(f"TOTAL A PAGAR: Q{total}")
                 
-        # ----------------------------------------------------
-        # OPCIÓN 3: QUITAR PRODUCTO
-        # ----------------------------------------------------
         elif opcion == "3":
             if len(carrito) == 0:
                 print("El carrito ya está vacío.")
@@ -150,9 +125,6 @@ def iniciar_nueva_venta():
                 if not borrado:
                     print("Ese producto no se encuentra en tu carrito.")
 
-        # ----------------------------------------------------
-        # OPCIÓN 4: CONFIRMAR VENTA Y GUARDAR
-        # ----------------------------------------------------
         elif opcion == "4":
             if len(carrito) == 0:
                 print("No puedes confirmar una venta porque el carrito está vacío.")
@@ -163,7 +135,6 @@ def iniciar_nueva_venta():
                 iva = round(suma_subtotal * 0.12, 2)
                 total = round(suma_subtotal + iva, 2)
                 
-                # Calculamos el ID basándonos en la longitud real del archivo JSON de ventas
                 siguiente_numero = len(ventas) + 1
                 id_venta = f"V{str(siguiente_numero).zfill(4)}"
                 
@@ -185,10 +156,8 @@ def iniciar_nueva_venta():
                     "total": total
                 }
                 
-                # Insertamos la nueva venta en la lista en memoria RAM
                 ventas.append(nueva_venta)
                 
-                # 2. ESCRITURA: Sobrescribimos los JSON usando nuestro módulo archivos.py
                 guardar_datos("datos/ventas.json", ventas)
                 guardar_datos("datos/productos.json", productos)
                 
@@ -197,9 +166,6 @@ def iniciar_nueva_venta():
                 print("¡Venta completada, inventario actualizado y datos guardados con éxito!")
                 break 
 
-        # ----------------------------------------------------
-        # OPCIÓN 5: CANCELAR Y SALIR 
-        # ----------------------------------------------------
         elif opcion == "5":
             print("Venta cancelada. No se ha modificado el inventario.")
             break 

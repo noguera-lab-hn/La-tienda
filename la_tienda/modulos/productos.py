@@ -1,46 +1,28 @@
-"""
-Módulo: productos.py
-Autores: [Francis Asaf Estrada Francia]
-Fecha: 2026-05-06
-Descripción: Funciones para gestionar productos (CRUD, stock, búsquedas)
-"""
 
-# IMPORTAMOS EL MOTOR DE BASE DE DATOS Y LAS VALIDACIONES
 from archivos import cargar_datos, guardar_datos
 from utilidades import validar_entero_positivo, validar_float_positivo
 
-# CONSTANTE: Nombre de la ruta donde se guardan los productos
 ARCHIVO_PRODUCTOS = "datos/productos.json"
 
-# ============================================
-# FUNCIONES BÁSICAS (CARGAR, GUARDAR, VERIFICAR)
-# ============================================
 
 def obtener_productos():
-    # Llama a cargar_datos pasándole la ruta del archivo
     return cargar_datos(ARCHIVO_PRODUCTOS)
 
 def guardar_productos(productos):
-    # Llama a guardar_datos con la ruta y los datos
     return guardar_datos(ARCHIVO_PRODUCTOS, productos)
 
 def producto_existe(codigo, productos):
-    # Itera sobre cada producto en la lista de productos
     for p in productos:
         if p["codigo"] == codigo:
             return True
     return False
 
-# ============================================
-# FUNCIONES PRINCIPALES DEL CRUD
-# ============================================
 
 def registrar_producto():
     print("\n--- REGISTRAR NUEVO PRODUCTO ---")
     
     productos = obtener_productos()
     
-    # --- Solicitar código único ---
     while True:
         codigo = input("Código (ej: P001): ").strip().upper()
         if not producto_existe(codigo, productos):
@@ -136,6 +118,7 @@ def ajustar_stock():
             print(f"Stock actual: {p['stock']}")
             print("1. Aumentar stock")
             print("2. Disminuir stock")
+            print("3. Modificar stock minimo")
             opcion = input("Opción: ").strip()
             
             if opcion == "1":
@@ -150,12 +133,17 @@ def ajustar_stock():
                     return
                 p["stock"] -= cantidad
                 motivo = "merma"
+            
+            elif opcion == "3":
+                nuevo_minimo = validar_entero_positivo("Nuevo stock mínimo: ")
+                p["stock_minimo"] = nuevo_minimo
+                motivo = "actualización de stock mínimo"
+                mensaje = f"Nuevo stock mínimo: {p['stock_minimo']}"
                 
             else:
                 print("Opción inválida")
                 return
             
-            # Guardar cambios y usar la variable 'motivo'
             if guardar_productos(productos):
                 print(f"Stock actualizado por {motivo}. Nuevo stock: {p['stock']}")
             return
@@ -182,7 +170,6 @@ def eliminar_producto():
         print("Producto no encontrado.")
         return
     
-    # --- Verificar si el producto tiene ventas registradas usando archivos.py ---
     ventas = cargar_datos("datos/ventas.json")
     
     for venta in ventas:
@@ -191,7 +178,6 @@ def eliminar_producto():
                 print("No se puede eliminar: este producto tiene ventas registradas.")
                 return
     
-    # --- Proceder a eliminar ---
     productos.remove(producto_encontrado)
     
     if guardar_productos(productos):
@@ -215,9 +201,6 @@ def productos_bajo_stock():
     return bajos
 
 
-# ============================================
-# MENÚ PRINCIPAL DEL MÓDULO
-# ============================================
 
 def modulo_productos():
     while True:

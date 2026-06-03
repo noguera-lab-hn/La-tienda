@@ -39,5 +39,70 @@
         "subtotal": 103.0,
         "iva": 12.36,
         "total": 115.36
+    },
+    {
+        "id_venta": "V0003",
+        "fecha": "2026-06-02 23:30:53",
+        "nit_cliente": "CF",
+        "items": [
+            {
+                "codigo": "P054",
+                "nombre": "Discos de Algodón Desmaquillantes (80 unidades)",
+                "cantidad": 6,
+                "precio_unit": 6.0,
+                "subtotal": 36.0
+            }
+        ],
+        "subtotal": 36.0,
+        "iva": 4.32,
+        "total": 40.32
+    },
+    {
+        "id_venta": "V0004",
+        "fecha": "2026-06-02 23:32:31",
+        "nit_cliente": "38748445",
+        "items": [
+            {
+                "codigo": "P012",
+                "nombre": "Salsa de Tomate",
+                "cantidad": 3,
+                "precio_unit": 14.0,
+                "subtotal": 42.0
+            },
+            {
+                "codigo": "P056",
+                "nombre": "Quitaesmalte con Acetona 100ml",
+                "cantidad": 5,
+                "precio_unit": 6.0,
+                "subtotal": 30.0
+            },
+            {
+                "codigo": "P089",
+                "nombre": "Cera Líquida para Pisos Autobrillante 1L",
+                "cantidad": 4,
+                "precio_unit": 25.0,
+                "subtotal": 100.0
+            }
+        ],
+        "subtotal": 172.0,
+        "iva": 20.64,
+        "total": 192.64
+    },
+    {
+        "id_venta": "V0005",
+        "fecha": "2026-06-02 23:33:07",
+        "nit_cliente": "CF",
+        "items": [
+            {
+                "codigo": "P001",
+                "nombre": "Azúcar 1lb",
+                "cantidad": 2,
+                "precio_unit": 6.5,
+                "subtotal": 13.0
+            }
+        ],
+        "subtotal": 13.0,
+        "iva": 1.56,
+        "total": 14.56
     }
 ]

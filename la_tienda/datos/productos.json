@@ -4,7 +4,7 @@
         "nombre": "Azúcar 1lb",
         "categoria": "Abarrotes",
         "precio": 6.5,
-        "stock": 12,
+        "stock": 10,
         "stock_minimo": 5
     },
     {
@@ -21,7 +21,7 @@
         "categoria": "Abarrotes",
         "precio": 8.5,
         "stock": 30,
-        "stock_minimo": 10
+        "stock_minimo": 4
     },
     {
         "codigo": "P004",
@@ -92,7 +92,7 @@
         "nombre": "Salsa de Tomate",
         "categoria": "Abarrotes",
         "precio": 14.0,
-        "stock": 22,
+        "stock": 19,
         "stock_minimo": 4
     },
     {
@@ -428,7 +428,7 @@
         "nombre": "Discos de Algodón Desmaquillantes (80 unidades)",
         "categoria": "Cuidado Personal",
         "precio": 6.0,
-        "stock": 15,
+        "stock": 9,
         "stock_minimo": 6
     },
     {
@@ -444,7 +444,7 @@
         "nombre": "Quitaesmalte con Acetona 100ml",
         "categoria": "Cuidado Personal",
         "precio": 6.0,
-        "stock": 24,
+        "stock": 19,
         "stock_minimo": 5
     },
     {
@@ -708,7 +708,7 @@
         "nombre": "Cera Líquida para Pisos Autobrillante 1L",
         "categoria": "Limpieza",
         "precio": 25.0,
-        "stock": 15,
+        "stock": 11,
         "stock_minimo": 6
     },
     {
