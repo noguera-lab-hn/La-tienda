@@ -1,0 +1,43 @@
+[
+    {
+        "id_venta": "V0001",
+        "fecha": "2026-05-03 14:32:10",
+        "nit_cliente": "12345678",
+        "items": [
+            {
+                "codigo": "P001",
+                "nombre": "Azúcar 1lb",
+                "cantidad": 2,
+                "precio_unit": 6.5,
+                "subtotal": 13.0
+            }
+        ],
+        "subtotal": 13.0,
+        "iva": 1.39,
+        "total": 14.39
+    },
+    {
+        "id_venta": "V0002",
+        "fecha": "2026-06-02 18:46:40",
+        "nit_cliente": "CF",
+        "items": [
+            {
+                "codigo": "P001",
+                "nombre": "Azúcar 1lb",
+                "cantidad": 12,
+                "precio_unit": 6.5,
+                "subtotal": 78.0
+            },
+            {
+                "codigo": "P005",
+                "nombre": "sal 1lb",
+                "cantidad": 5,
+                "precio_unit": 5.0,
+                "subtotal": 25.0
+            }
+        ],
+        "subtotal": 103.0,
+        "iva": 12.36,
+        "total": 115.36
+    }
+]
