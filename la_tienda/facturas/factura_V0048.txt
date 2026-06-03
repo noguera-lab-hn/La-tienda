@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0048
+Fecha y Hora: 2026-06-03 09:57:51
+NIT Cliente:  CF
+--------------------------------
+2x Cloro Líquido Desinfectante 1L - Q37.0
+--------------------------------
+Subtotal:  Q37.0
+IVA (12%): Q4.44
+TOTAL:     Q41.44
+=== ¡GRACIAS POR SU COMPRA! ===

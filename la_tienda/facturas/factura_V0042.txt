@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0042
+Fecha y Hora: 2026-06-03 09:56:05
+NIT Cliente:  37574895
+--------------------------------
+2x Cera Líquida para Pisos Autobrillante 1L - Q50.0
+--------------------------------
+Subtotal:  Q50.0
+IVA (12%): Q6.0
+TOTAL:     Q56.0
+=== ¡GRACIAS POR SU COMPRA! ===

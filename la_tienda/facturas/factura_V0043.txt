@@ -1,0 +1,12 @@
+=== TU TIENDA ===
+Factura No:   V0043
+Fecha y Hora: 2026-06-03 09:56:26
+NIT Cliente:  CF
+--------------------------------
+2x Gel Limpiador Sanitario Antisarro 500ml - Q28.0
+2x Pañales Desechables Etapa 3 (40 unidades) - Q30.0
+--------------------------------
+Subtotal:  Q58.0
+IVA (12%): Q6.96
+TOTAL:     Q64.96
+=== ¡GRACIAS POR SU COMPRA! ===

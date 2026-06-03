@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0003
+Fecha y Hora: 2026-06-02 23:30:53
+NIT Cliente:  CF
+--------------------------------
+6x Discos de Algodón Desmaquillantes (80 unidades) - Q36.0
+--------------------------------
+Subtotal:  Q36.0
+IVA (12%): Q4.32
+TOTAL:     Q40.32
+=== ¡GRACIAS POR SU COMPRA! ===

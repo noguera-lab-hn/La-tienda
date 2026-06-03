@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0031
+Fecha y Hora: 2026-06-03 09:52:50
+NIT Cliente:  CF
+--------------------------------
+2x Desengrasante para Cocina en Spray 650ml - Q40.0
+--------------------------------
+Subtotal:  Q40.0
+IVA (12%): Q4.8
+TOTAL:     Q44.8
+=== ¡GRACIAS POR SU COMPRA! ===

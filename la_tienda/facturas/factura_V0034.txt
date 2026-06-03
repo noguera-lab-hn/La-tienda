@@ -1,0 +1,12 @@
+=== TU TIENDA ===
+Factura No:   V0034
+Fecha y Hora: 2026-06-03 09:53:46
+NIT Cliente:  }
+--------------------------------
+2x Detergente Líquido Ropa Color 1L - Q24.0
+3x Pasta de tomate Campofresco 87g - Q18.0
+--------------------------------
+Subtotal:  Q42.0
+IVA (12%): Q5.04
+TOTAL:     Q47.04
+=== ¡GRACIAS POR SU COMPRA! ===

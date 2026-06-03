@@ -1,0 +1,12 @@
+=== TU TIENDA ===
+Factura No:   V0047
+Fecha y Hora: 2026-06-03 09:57:29
+NIT Cliente:  CF
+--------------------------------
+2x Desengrasante para Cocina en Spray 650ml - Q40.0
+3x Pasta de tomate íssima 90g - Q21.0
+--------------------------------
+Subtotal:  Q61.0
+IVA (12%): Q7.32
+TOTAL:     Q68.32
+=== ¡GRACIAS POR SU COMPRA! ===

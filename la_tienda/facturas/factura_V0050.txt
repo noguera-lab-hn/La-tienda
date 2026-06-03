@@ -1,0 +1,13 @@
+=== TU TIENDA ===
+Factura No:   V0050
+Fecha y Hora: 2026-06-03 09:58:37
+NIT Cliente:  5485739473
+--------------------------------
+2x Refresco de Cola Regular 2.5L - Q52.0
+4x Queso Cottage Clásico Vaso 400g - Q56.0
+3x Bebida de Aloe Vera Sabor Original 500ml - Q24.0
+--------------------------------
+Subtotal:  Q132.0
+IVA (12%): Q15.84
+TOTAL:     Q147.84
+=== ¡GRACIAS POR SU COMPRA! ===

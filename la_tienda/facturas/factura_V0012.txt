@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0012
+Fecha y Hora: 2026-06-03 09:47:07
+NIT Cliente:  CF
+--------------------------------
+2x Sardinas en salsa de tomate - Q30.0
+--------------------------------
+Subtotal:  Q30.0
+IVA (12%): Q3.6
+TOTAL:     Q33.6
+=== ¡GRACIAS POR SU COMPRA! ===

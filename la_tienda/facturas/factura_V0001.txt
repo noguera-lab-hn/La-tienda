@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0001
+Fecha y Hora: 2026-06-02 16:19:43
+NIT Cliente:  1
+--------------------------------
+9x Azúcar 1lb - Q58.5
+--------------------------------
+Subtotal:  Q58.5
+IVA (12%): Q7.02
+TOTAL:     Q65.52
+=== ¡GRACIAS POR SU COMPRA! ===

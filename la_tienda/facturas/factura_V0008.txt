@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0008
+Fecha y Hora: 2026-06-03 09:46:06
+NIT Cliente:  23985843
+--------------------------------
+12x Quita manchas en Polvo Oxi-Acción 450g - Q72.0
+--------------------------------
+Subtotal:  Q72.0
+IVA (12%): Q8.64
+TOTAL:     Q80.64
+=== ¡GRACIAS POR SU COMPRA! ===

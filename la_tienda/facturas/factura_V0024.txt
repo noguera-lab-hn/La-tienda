@@ -1,0 +1,12 @@
+=== TU TIENDA ===
+Factura No:   V0024
+Fecha y Hora: 2026-06-03 09:51:03
+NIT Cliente:  CF
+--------------------------------
+3x Queso Fresco Tipo Panela 400g - Q33.0
+4x Jugo de Tomate Sazonado 946ml - Q56.0
+--------------------------------
+Subtotal:  Q89.0
+IVA (12%): Q10.68
+TOTAL:     Q99.68
+=== ¡GRACIAS POR SU COMPRA! ===

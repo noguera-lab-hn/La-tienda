@@ -1,0 +1,13 @@
+=== TU TIENDA ===
+Factura No:   V0004
+Fecha y Hora: 2026-06-02 23:32:31
+NIT Cliente:  38748445
+--------------------------------
+3x Salsa de Tomate - Q42.0
+5x Quitaesmalte con Acetona 100ml - Q30.0
+4x Cera Líquida para Pisos Autobrillante 1L - Q100.0
+--------------------------------
+Subtotal:  Q172.0
+IVA (12%): Q20.64
+TOTAL:     Q192.64
+=== ¡GRACIAS POR SU COMPRA! ===

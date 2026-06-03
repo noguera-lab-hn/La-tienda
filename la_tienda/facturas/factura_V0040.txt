@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0040
+Fecha y Hora: 2026-06-03 09:55:25
+NIT Cliente:  CF
+--------------------------------
+2x Quitaesmalte con Acetona 100ml - Q12.0
+--------------------------------
+Subtotal:  Q12.0
+IVA (12%): Q1.44
+TOTAL:     Q13.44
+=== ¡GRACIAS POR SU COMPRA! ===

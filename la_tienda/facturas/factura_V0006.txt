@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0006
+Fecha y Hora: 2026-06-03 09:27:01
+NIT Cliente:  12355535
+--------------------------------
+3x Jabón de Barra para Lavandería 350g - Q27.0
+--------------------------------
+Subtotal:  Q27.0
+IVA (12%): Q3.24
+TOTAL:     Q30.24
+=== ¡GRACIAS POR SU COMPRA! ===

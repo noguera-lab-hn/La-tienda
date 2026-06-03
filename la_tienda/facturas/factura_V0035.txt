@@ -1,0 +1,13 @@
+=== TU TIENDA ===
+Factura No:   V0035
+Fecha y Hora: 2026-06-03 09:54:19
+NIT Cliente:  CF
+--------------------------------
+1x Acondicionador Brillo Herbal 350ml - Q12.0
+2x Bebida de Malta Sin Alcohol Botella 330ml - Q37.0
+2x Queso Fresco Tipo Panela 400g - Q22.0
+--------------------------------
+Subtotal:  Q71.0
+IVA (12%): Q8.52
+TOTAL:     Q79.52
+=== ¡GRACIAS POR SU COMPRA! ===

@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0022
+Fecha y Hora: 2026-06-03 09:50:15
+NIT Cliente:  CF
+--------------------------------
+2x Yogur Bebible Sabor Durazno 220g - Q18.0
+--------------------------------
+Subtotal:  Q18.0
+IVA (12%): Q2.16
+TOTAL:     Q20.16
+=== ¡GRACIAS POR SU COMPRA! ===

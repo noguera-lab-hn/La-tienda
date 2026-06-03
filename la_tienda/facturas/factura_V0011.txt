@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0011
+Fecha y Hora: 2026-06-03 09:46:55
+NIT Cliente:  CF
+--------------------------------
+1x Leche Entera Pasteurizada Cartón 1L - Q6.5
+--------------------------------
+Subtotal:  Q6.5
+IVA (12%): Q0.78
+TOTAL:     Q7.28
+=== ¡GRACIAS POR SU COMPRA! ===

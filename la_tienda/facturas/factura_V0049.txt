@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0049
+Fecha y Hora: 2026-06-03 09:58:06
+NIT Cliente:  479574385
+--------------------------------
+3x Rastrillos Desechables 3 Hojas (Pack x4) - Q54.75
+--------------------------------
+Subtotal:  Q54.75
+IVA (12%): Q6.57
+TOTAL:     Q61.32
+=== ¡GRACIAS POR SU COMPRA! ===

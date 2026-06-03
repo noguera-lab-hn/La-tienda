@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0045
+Fecha y Hora: 2026-06-03 09:56:48
+NIT Cliente:  CF
+--------------------------------
+4x Frijoles Campofresco 360g - Q48.0
+--------------------------------
+Subtotal:  Q48.0
+IVA (12%): Q5.76
+TOTAL:     Q53.76
+=== ¡GRACIAS POR SU COMPRA! ===

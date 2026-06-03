@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0015
+Fecha y Hora: 2026-06-03 09:48:04
+NIT Cliente:  CF
+--------------------------------
+2x Cepillo de Dientes Cerdas Medias - Q10.0
+--------------------------------
+Subtotal:  Q10.0
+IVA (12%): Q1.2
+TOTAL:     Q11.2
+=== ¡GRACIAS POR SU COMPRA! ===

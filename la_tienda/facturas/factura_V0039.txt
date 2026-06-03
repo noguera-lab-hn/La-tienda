@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0039
+Fecha y Hora: 2026-06-03 09:55:18
+NIT Cliente:  p032
+--------------------------------
+2x Acondicionador Brillo Herbal 350ml - Q24.0
+--------------------------------
+Subtotal:  Q24.0
+IVA (12%): Q2.88
+TOTAL:     Q26.88
+=== ¡GRACIAS POR SU COMPRA! ===

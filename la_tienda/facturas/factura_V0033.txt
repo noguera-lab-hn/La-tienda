@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0033
+Fecha y Hora: 2026-06-03 09:53:21
+NIT Cliente:  CF
+--------------------------------
+2x Queso Fresco Tipo Panela 400g - Q22.0
+--------------------------------
+Subtotal:  Q22.0
+IVA (12%): Q2.64
+TOTAL:     Q24.64
+=== ¡GRACIAS POR SU COMPRA! ===

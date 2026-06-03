@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0020
+Fecha y Hora: 2026-06-03 09:49:33
+NIT Cliente:  CF
+--------------------------------
+3x Botella de miel 500ml - Q78.0
+--------------------------------
+Subtotal:  Q78.0
+IVA (12%): Q9.36
+TOTAL:     Q87.36
+=== ¡GRACIAS POR SU COMPRA! ===

@@ -1,0 +1,11 @@
+=== TU TIENDA ===
+Factura No:   V0013
+Fecha y Hora: 2026-06-03 09:47:21
+NIT Cliente:  CF
+--------------------------------
+1x Talco para Pies Desodorante 120g - Q14.0
+--------------------------------
+Subtotal:  Q14.0
+IVA (12%): Q1.68
+TOTAL:     Q15.68
+=== ¡GRACIAS POR SU COMPRA! ===
