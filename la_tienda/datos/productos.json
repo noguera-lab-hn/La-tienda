@@ -1,0 +1,1210 @@
+[
+    {
+        "codigo": "P001",
+        "nombre": "Azúcar 1lb",
+        "categoria": "Abarrotes",
+        "precio": 6.5,
+        "stock": 10,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P002",
+        "nombre": "Arroz 1lb",
+        "categoria": "Abarrotes",
+        "precio": 12.0,
+        "stock": 15,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P003",
+        "nombre": "frijoles 1lb",
+        "categoria": "Abarrotes",
+        "precio": 8.5,
+        "stock": 30,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P004",
+        "nombre": "Aceite 1lb",
+        "categoria": "Abarrotes",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P005",
+        "nombre": "sal 1lb",
+        "categoria": "Abarrotes",
+        "precio": 5.0,
+        "stock": 3,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P006",
+        "nombre": "Harina",
+        "categoria": "Abarrotes",
+        "precio": 12.0,
+        "stock": 14,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P007",
+        "nombre": "Spaguetti El Chef",
+        "categoria": "Abarrotes",
+        "precio": 9.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P008",
+        "nombre": "Cafe 1lb",
+        "categoria": "Abarrotes",
+        "precio": 11.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P009",
+        "nombre": "Cafe 2lb",
+        "categoria": "Abarrotes",
+        "precio": 20.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P010",
+        "nombre": "Lentejas 1b",
+        "categoria": "Abarrotes",
+        "precio": 13.25,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P011",
+        "nombre": "Atún en Aceite",
+        "categoria": "Abarrotes",
+        "precio": 16.5,
+        "stock": 44,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P012",
+        "nombre": "Salsa de Tomate",
+        "categoria": "Abarrotes",
+        "precio": 14.0,
+        "stock": 19,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P013",
+        "nombre": "Chiles Jalapeños en Lata",
+        "categoria": "Abarrotes",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P014",
+        "nombre": "Elote en grano (enlatado)",
+        "categoria": "Abarrotes",
+        "precio": 9.0,
+        "stock": 35,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P015",
+        "nombre": "Sardinas en salsa de tomate",
+        "categoria": "Abarrotes",
+        "precio": 15.0,
+        "stock": 28,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P016",
+        "nombre": "Mermelada de higos",
+        "categoria": "Abarrotes",
+        "precio": 22.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P017",
+        "nombre": "Cartón con huevos",
+        "categoria": "Abarrotes",
+        "precio": 41.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P018",
+        "nombre": "Cereal de maiz",
+        "categoria": "Abarrotes",
+        "precio": 18.25,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P019",
+        "nombre": "Pan Integral",
+        "categoria": "Abarrotes",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P020",
+        "nombre": "Pan para Hamburguesa",
+        "categoria": "Abarrotes",
+        "precio": 18.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P021",
+        "nombre": "Botella de miel 500ml",
+        "categoria": "Abarrotes",
+        "precio": 26.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P022",
+        "nombre": "Mayonesa Hellmann's 190g",
+        "categoria": "Abarrotes",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P023",
+        "nombre": "Salsa ajo perejil 240ml",
+        "categoria": "Abarrotes",
+        "precio": 18.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P024",
+        "nombre": "Margarina con ajo y hierbas 80g",
+        "categoria": "Abarrotes",
+        "precio": 6.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P025",
+        "nombre": "Frijoles Campofresco 360g",
+        "categoria": "Abarrotes",
+        "precio": 12.0,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P026",
+        "nombre": "Pasta de tomate Campofresco 87g",
+        "categoria": "Abarrotes",
+        "precio": 6.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P027",
+        "nombre": "Pasta de tomate íssima 90g",
+        "categoria": "Abarrotes",
+        "precio": 7.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P028",
+        "nombre": "Sofrito Campofresco 87g",
+        "categoria": "Abarrotes",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P029",
+        "nombre": "Tortitas Pollo Rey 275g",
+        "categoria": "Abarrotes",
+        "precio": 25.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P030",
+        "nombre": "Papas Fritas 750g",
+        "categoria": "Abarrotes",
+        "precio": 35.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P031",
+        "nombre": "Shampoo Control Caspa 400ml",
+        "categoria": "Cuidado Personal",
+        "precio": 6.5,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P032",
+        "nombre": "Acondicionador Brillo Herbal 350ml",
+        "categoria": "Cuidado Personal",
+        "precio": 12.0,
+        "stock": 15,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P033",
+        "nombre": "Jabón de Barra Humectante 100g",
+        "categoria": "Cuidado Personal",
+        "precio": 8.5,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P034",
+        "nombre": "Crema Dental Triple Acción 75ml",
+        "categoria": "Cuidado Personal",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P035",
+        "nombre": "Cepillo de Dientes Cerdas Medias",
+        "categoria": "Cuidado Personal",
+        "precio": 5.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P036",
+        "nombre": "Desodorante en Aerosol Masculino 150ml",
+        "categoria": "Cuidado Personal",
+        "precio": 12.0,
+        "stock": 14,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P037",
+        "nombre": "Desodorante Roll-On Femenino 50ml",
+        "categoria": "Cuidado Personal",
+        "precio": 9.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P038",
+        "nombre": "Crema Corporal Piel Extra Seca 400ml",
+        "categoria": "Cuidado Personal",
+        "precio": 11.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P039",
+        "nombre": "Crema Facial Hidratante Noche 50g",
+        "categoria": "Cuidado Personal",
+        "precio": 20.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P040",
+        "nombre": "Gel Antibacterial para Manos 250ml",
+        "categoria": "Cuidado Personal",
+        "precio": 13.25,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P041",
+        "nombre": "Enjuague Bucal Menta Sabor Suave 500ml",
+        "categoria": "Cuidado Personal",
+        "precio": 16.5,
+        "stock": 44,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P042",
+        "nombre": "Hilo Dental Limpieza Profunda 50m",
+        "categoria": "Cuidado Personal",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P043",
+        "nombre": "Toallas Femeninas con Alas (10 unidades)",
+        "categoria": "Cuidado Personal",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P044",
+        "nombre": "Protectores Diarios Diurnos (30 unidades)",
+        "categoria": "Cuidado Personal",
+        "precio": 9.0,
+        "stock": 35,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P045",
+        "nombre": "Pañales Desechables Etapa 3 (40 unidades)",
+        "categoria": "Cuidado Personal",
+        "precio": 15.0,
+        "stock": 28,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P046",
+        "nombre": "Toallitas Húmedas para Bebé (80 unidades)",
+        "categoria": "Cuidado Personal",
+        "precio": 22.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P047",
+        "nombre": "Espuma de Afeitar Piel Sensible 200ml",
+        "categoria": "Cuidado Personal",
+        "precio": 41.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P048",
+        "nombre": "Rastrillos Desechables 3 Hojas (Pack x4)",
+        "categoria": "Cuidado Personal",
+        "precio": 18.25,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P049",
+        "nombre": "Loción After Shave Refrescante 100ml",
+        "categoria": "Cuidado Personal",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P050",
+        "nombre": "Protector Solar FPS 50+ Facial 50ml",
+        "categoria": "Cuidado Personal",
+        "precio": 18.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P051",
+        "nombre": "Gel Fijador para Cabello Extra Firme 250g",
+        "categoria": "Cuidado Personal",
+        "precio": 26.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P052",
+        "nombre": "Talco para Pies Desodorante 120g",
+        "categoria": "Cuidado Personal",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P053",
+        "nombre": "Cotonetes de Algodón (100 unidades)",
+        "categoria": "Cuidado Personal",
+        "precio": 18.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P054",
+        "nombre": "Discos de Algodón Desmaquillantes (80 unidades)",
+        "categoria": "Cuidado Personal",
+        "precio": 6.0,
+        "stock": 9,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P055",
+        "nombre": "Agua Micelar Limpiadora Todo en 1 400ml",
+        "categoria": "Cuidado Personal",
+        "precio": 12.0,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P056",
+        "nombre": "Quitaesmalte con Acetona 100ml",
+        "categoria": "Cuidado Personal",
+        "precio": 6.0,
+        "stock": 19,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P057",
+        "nombre": "Pañuelos Desechables de Bolsillo (Pack x6)",
+        "categoria": "Cuidado Personal",
+        "precio": 7.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P058",
+        "nombre": "Jabón Líquido para Manos Glicerina 221ml",
+        "categoria": "Cuidado Personal",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P059",
+        "nombre": "Esponja de Baño Exfoliante Corporal",
+        "categoria": "Cuidado Personal",
+        "precio": 25.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P060",
+        "nombre": "Crema para Peinar Rizos Definidos 300ml",
+        "categoria": "Cuidado Personal",
+        "precio": 35.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P061",
+        "nombre": "Jabón en Polvo Ropa Blanca 500g",
+        "categoria": "Limpieza",
+        "precio": 6.5,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P062",
+        "nombre": "Detergente Líquido Ropa Color 1L",
+        "categoria": "Limpieza",
+        "precio": 12.0,
+        "stock": 15,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P063",
+        "nombre": "Suavizante de Telas Aroma Fresco 850ml",
+        "categoria": "Limpieza",
+        "precio": 8.5,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P064",
+        "nombre": "Cloro Líquido Desinfectante 1L",
+        "categoria": "Limpieza",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P065",
+        "nombre": "Limpiador Líquido Multiusos Lavanda 1L",
+        "categoria": "Limpieza",
+        "precio": 5.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P066",
+        "nombre": "Lavatrastes Líquido Arranca Grasa 750ml",
+        "categoria": "Limpieza",
+        "precio": 12.0,
+        "stock": 14,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P067",
+        "nombre": "Jabón de Barra para Lavandería 350g",
+        "categoria": "Limpieza",
+        "precio": 9.0,
+        "stock": 9,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P068",
+        "nombre": "Limpiador de Vidrios y Cristales Atomizador 500ml",
+        "categoria": "Limpieza",
+        "precio": 11.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P069",
+        "nombre": "Desengrasante para Cocina en Spray 650ml",
+        "categoria": "Limpieza",
+        "precio": 20.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P070",
+        "nombre": "Limpiador Líquido para Pisos de Madera 1L",
+        "categoria": "Limpieza",
+        "precio": 13.25,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P071",
+        "nombre": "Pastilla Desodorante para Tanque de WC (2 unidades)",
+        "categoria": "Limpieza",
+        "precio": 16.5,
+        "stock": 44,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P072",
+        "nombre": "Gel Limpiador Sanitario Antisarro 500ml",
+        "categoria": "Limpieza",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P073",
+        "nombre": "Lustrador de Muebles en Aerosol 360ml",
+        "categoria": "Limpieza",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P074",
+        "nombre": "Insecticida en Aerosol Contra Voladores 400ml",
+        "categoria": "Limpieza",
+        "precio": 9.0,
+        "stock": 35,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P075",
+        "nombre": "Aromatizante de Ambientes en Spray 275ml",
+        "categoria": "Limpieza",
+        "precio": 15.0,
+        "stock": 28,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P076",
+        "nombre": "Aromatizante Continuo Eléctrico (Aparato + Repuesto)",
+        "categoria": "Limpieza",
+        "precio": 22.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P077",
+        "nombre": "Esponja Fibra Verde para Trastes (Pack x2)s",
+        "categoria": "Limpieza",
+        "precio": 41.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P078",
+        "nombre": "Fibra de Esponja Cero Rayas (Pack x2)",
+        "categoria": "Limpieza",
+        "precio": 18.25,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P079",
+        "nombre": "Paño de Microfibra Multiusos (3 unidades)",
+        "categoria": "Limpieza",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P080",
+        "nombre": "Guantes de Látex para Limpieza Talla M",
+        "categoria": "Limpieza",
+        "precio": 18.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P081",
+        "nombre": "Bolsas para Basura Medianas (30 unidades)",
+        "categoria": "Limpieza",
+        "precio": 26.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P082",
+        "nombre": "Papel Higiénico Hoja Doble (4 rollos)",
+        "categoria": "Limpieza",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P083",
+        "nombre": "Toallas de Papel para Cocina (Pack x2 rollos)",
+        "categoria": "Limpieza",
+        "precio": 18.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P084",
+        "nombre": "Servilletas de Papel Hoja Sencilla (100 unidades)",
+        "categoria": "Limpieza",
+        "precio": 6.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P085",
+        "nombre": "Sosa Cáustica en Escamas 500g",
+        "categoria": "Limpieza",
+        "precio": 12.0,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P086",
+        "nombre": "Quita manchas en Polvo Oxi-Acción 450g",
+        "categoria": "Limpieza",
+        "precio": 6.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P087",
+        "nombre": "Almidón en Aerosol para Planchado Fácil 400ml",
+        "categoria": "Limpieza",
+        "precio": 7.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P088",
+        "nombre": "Destapacaños Líquido Gel Genuino 1L",
+        "categoria": "Limpieza",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P089",
+        "nombre": "Cera Líquida para Pisos Autobrillante 1L",
+        "categoria": "Limpieza",
+        "precio": 25.0,
+        "stock": 11,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P090",
+        "nombre": "Pastilla de Jabón para Lavavajillas Automático (20 piezas)",
+        "categoria": "Limpieza",
+        "precio": 35.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P091",
+        "nombre": "Leche Entera Pasteurizada Cartón 1L",
+        "categoria": "Lácteos",
+        "precio": 6.5,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P092",
+        "nombre": "Leche Semidescremada Ultra Pasteurizada 1L",
+        "categoria": "Lácteos",
+        "precio": 12.0,
+        "stock": 15,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P093",
+        "nombre": "Leche Descremada Deslactosada 1L",
+        "categoria": "Lácteos",
+        "precio": 8.5,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P094",
+        "nombre": "Leche en Polvo Completa Bolsa 120g",
+        "categoria": "Lácteos",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P095",
+        "nombre": "Yogur Natural Sin Azúcar Batido 1kg",
+        "categoria": "Lácteos",
+        "precio": 5.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P096",
+        "nombre": "Yogur Griego con Fresa Frapé 150g",
+        "categoria": "Lácteos",
+        "precio": 12.0,
+        "stock": 14,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P097",
+        "nombre": "Yogur Bebible Sabor Durazno 220g",
+        "categoria": "Lácteos",
+        "precio": 9.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P098",
+        "nombre": "Queso Fresco Tipo Panela 400g",
+        "categoria": "Lácteos",
+        "precio": 11.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P099",
+        "nombre": "Queso Mozzarella Rallado 200g",
+        "categoria": "Lácteos",
+        "precio": 20.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P100",
+        "nombre": "Queso Cheddar en Rebanadas 200g",
+        "categoria": "Lácteos",
+        "precio": 13.25,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P101",
+        "nombre": "Queso Crema Tipo Americano Barra 190g",
+        "categoria": "Lácteos",
+        "precio": 16.5,
+        "stock": 44,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P102",
+        "nombre": "Queso Parmesano Rayado Frasco 100g",
+        "categoria": "Lácteos",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P103",
+        "nombre": "Mantequilla Sin Sal Barra 90g",
+        "categoria": "Lácteos",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P104",
+        "nombre": "Margarina Con Sal Tina 250g",
+        "categoria": "Lácteos",
+        "precio": 9.0,
+        "stock": 35,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P105",
+        "nombre": "Crema Ácida Entera Vaso 200g",
+        "categoria": "Lácteos",
+        "precio": 15.0,
+        "stock": 28,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P106",
+        "nombre": "Crema para Batir Líquida 500ml",
+        "categoria": "Lácteos",
+        "precio": 22.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P107",
+        "nombre": "Dulce de Leche Repostero Pote 400g",
+        "categoria": "Lácteos",
+        "precio": 41.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P108",
+        "nombre": "Leche Condensada Lata 387g",
+        "categoria": "Lácteos",
+        "precio": 18.25,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P109",
+        "nombre": "Leche Evaporada Lata 360g",
+        "categoria": "Lácteos",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P110",
+        "nombre": "Bebida Láctea Fermentada Infantil 80ml (Pack x5)",
+        "categoria": "Lácteos",
+        "precio": 18.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P111",
+        "nombre": "Queso Gouda Rebanado 200g",
+        "categoria": "Lácteos",
+        "precio": 26.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P112",
+        "nombre": "Queso Cottage Clásico Vaso 400g",
+        "categoria": "Lácteos",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P113",
+        "nombre": "Yogur Batido Sabor Vainilla Con Cereales 140g",
+        "categoria": "Lácteos",
+        "precio": 18.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P114",
+        "nombre": "Crema Líquida para Café Sabor Avellana 500ml",
+        "categoria": "Lácteos",
+        "precio": 6.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P115",
+        "nombre": "Queso Oaxaca Hebra 400g",
+        "categoria": "Lácteos",
+        "precio": 12.0,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P116",
+        "nombre": "Queso Azul Madurado Trozo 100g",
+        "categoria": "Lácteos",
+        "precio": 6.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P117",
+        "nombre": "Suero de Mantequilla Líquido (Butter milk) 500ml",
+        "categoria": "Lácteos",
+        "precio": 7.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P118",
+        "nombre": "Mantequilla Clarificada Ghee Frasco 250g",
+        "categoria": "Lácteos",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P119",
+        "nombre": "Queso Ricotta Suave Tina 250g",
+        "categoria": "Lácteos",
+        "precio": 25.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P120",
+        "nombre": "Postre de Flan de Vainilla con Caramelo 100g",
+        "categoria": "Lácteos",
+        "precio": 35.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P121",
+        "nombre": "Refresco de Cola Regular 2.5L",
+        "categoria": "Bebidas",
+        "precio": 26.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P122",
+        "nombre": "Refresco de Limón Sin Azúcar 600ml",
+        "categoria": "Bebidas",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P123",
+        "nombre": "Agua Mineral Con Gas 1.5L",
+        "categoria": "Bebidas",
+        "precio": 18.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P124",
+        "nombre": "Agua Purificada Sin Gas 5L",
+        "categoria": "Bebidas",
+        "precio": 6.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P125",
+        "nombre": "Jugo de Naranja 100% Natural 1L",
+        "categoria": "Bebidas",
+        "precio": 12.0,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P126",
+        "nombre": "Néctar de Durazno en Caja 1L",
+        "categoria": "Bebidas",
+        "precio": 6.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P127",
+        "nombre": "Bebida Energizante Lata 473ml",
+        "categoria": "Bebidas",
+        "precio": 7.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P128",
+        "nombre": "Bebida Isotónica Sabor Frutas 600ml",
+        "categoria": "Bebidas",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P129",
+        "nombre": "Té Negro Frío Sabor Limón 1.5L",
+        "categoria": "Bebidas",
+        "precio": 25.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P130",
+        "nombre": "Café Soluble Clásico Frasco 200g",
+        "categoria": "Bebidas",
+        "precio": 35.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P131",
+        "nombre": "Café Molido Tueste Medio Bolsa 400g",
+        "categoria": "Bebidas",
+        "precio": 6.5,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P132",
+        "nombre": "Té de Manzanilla en Sobres (25 unidades)",
+        "categoria": "Bebidas",
+        "precio": 12.0,
+        "stock": 15,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P133",
+        "nombre": "Té Verde con Menta en Sobres (20 unidades)",
+        "categoria": "Bebidas",
+        "precio": 8.5,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P134",
+        "nombre": "Chocolate en Polvo para Modificar Leche 400g",
+        "categoria": "Bebidas",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P135",
+        "nombre": "Cerveza Clara Lata 355ml (Six-Pack)",
+        "categoria": "Bebidas",
+        "precio": 5.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P136",
+        "nombre": "Cerveza Oscura Artesanal Botella 330ml",
+        "categoria": "Bebidas",
+        "precio": 12.0,
+        "stock": 14,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P137",
+        "nombre": "Vino Tinto Cabernet Sauvignon 750ml",
+        "categoria": "Bebidas",
+        "precio": 9.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P138",
+        "nombre": "Vino Blanco Chardonnay 750ml",
+        "categoria": "Bebidas",
+        "precio": 11.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P139",
+        "nombre": "Agua Saborizada Frutos Rojos 1L",
+        "categoria": "Bebidas",
+        "precio": 20.0,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P140",
+        "nombre": "Jarabe de Granadina para Coctel 750ml",
+        "categoria": "Bebidas",
+        "precio": 13.25,
+        "stock": 18,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P141",
+        "nombre": "Cápsulas de Café Espresso (10 unidades)",
+        "categoria": "Bebidas",
+        "precio": 16.5,
+        "stock": 44,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P142",
+        "nombre": "Jugo de Tomate Sazonado 946ml",
+        "categoria": "Bebidas",
+        "precio": 14.0,
+        "stock": 22,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P143",
+        "nombre": "Bebida de Aloe Vera Sabor Original 500ml",
+        "categoria": "Bebidas",
+        "precio": 8.0,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P144",
+        "nombre": "Concentrado de Horchata Botella 1L",
+        "categoria": "Bebidas",
+        "precio": 9.0,
+        "stock": 35,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P145",
+        "nombre": "Agua Tónica Botella 600ml",
+        "categoria": "Bebidas",
+        "precio": 15.0,
+        "stock": 28,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P146",
+        "nombre": "Sidra de Manzana Gasificada 700ml",
+        "categoria": "Bebidas",
+        "precio": 22.0,
+        "stock": 24,
+        "stock_minimo": 5
+    },
+    {
+        "codigo": "P147",
+        "nombre": "Refresco de Manzana Gasificado 2L",
+        "categoria": "Bebidas",
+        "precio": 41.0,
+        "stock": 12,
+        "stock_minimo": 4
+    },
+    {
+        "codigo": "P148",
+        "nombre": "Jugo de Manzana Orgánico Infantil 200ml",
+        "categoria": "Bebidas",
+        "precio": 18.25,
+        "stock": 30,
+        "stock_minimo": 10
+    },
+    {
+        "codigo": "P149",
+        "nombre": "Bebida de Malta Sin Alcohol Botella 330ml",
+        "categoria": "Bebidas",
+        "precio": 18.5,
+        "stock": 15,
+        "stock_minimo": 6
+    },
+    {
+        "codigo": "P150",
+        "nombre": "Polvo para Preparar Bebida Sabor Jamaica 15g",
+        "categoria": "Bebidas",
+        "precio": 18.0,
+        "stock": 8,
+        "stock_minimo": 3
+    },
+    {
+        "codigo": "P200",
+        "nombre": "Este es un producto de prueba",
+        "categoria": "Abarrotes",
+        "precio": 15.0,
+        "stock": 20,
+        "stock_minimo": 5
+    }
+]
