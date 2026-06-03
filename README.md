@@ -28,7 +28,7 @@ El objetivo principal es digitalizar el control de ventas, inventario y clientes
 
 2. **Navegar a la carpeta del proyecto:**
 ```bash
-cd la-tienda
+cd la_tienda
 ```
 
 
