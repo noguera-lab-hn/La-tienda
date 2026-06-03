@@ -1,4 +1,4 @@
-# 🛒 Sistema POS "La Tienda"
+# Sistema POS "La Tienda"
 
 ## Descripción del Proyecto
 Este proyecto es un Sistema de Punto de Venta (POS) diseñado específicamente para "La Tienda", un negocio local administrado por Doña Marta. El sistema está construido en **Python** y opera en la consola, ofreciendo una solución robusta, rápida y sin necesidad de conexión a internet. 
@@ -23,13 +23,13 @@ El objetivo principal es digitalizar el control de ventas, inventario y clientes
 1. **Clonar el repositorio:**
    Abre tu terminal y ejecuta el siguiente comando para descargar el código a tu máquina local:
    ```bash
-   git clone [Pega_Aqui_El_Enlace_De_Tu_Repositorio_GitHub]
+   git clone https://github.com/noguera-lab-hn/La-tienda.git
 
 ```
 
 2. **Navegar a la carpeta del proyecto:**
 ```bash
-cd [Nombre_De_La_Carpeta_Del_Repositorio]
+cd la-tienda
 
 ```
 
@@ -50,15 +50,18 @@ python main.py
 
 ### Menú Principal
 
-> *Vista del menú principal donde se accede a los distintos módulos.*
+<img width="475" height="224" alt="Captura de pantalla 2026-06-02 235452" src="https://github.com/user-attachments/assets/73a9d01f-9b82-4b05-a628-bfb5f14dd7b5" />
+
 
 ### Módulo de Ventas (Carrito)
 
-> *DInterfaz de ventas mostrando el carrito, el cálculo del IVA y los totales.*
+<img width="859" height="843" alt="Captura de pantalla 2026-06-02 235643" src="https://github.com/user-attachments/assets/9e8b55d2-45d9-44ad-a5e3-a0a7b3402f77" />
+
 
 ### Ejemplo de Factura Generada
 
-> *Archivo .txt generado automáticamente tras confirmar una venta.*
+<img width="690" height="481" alt="Captura de pantalla 2026-06-02 235712" src="https://github.com/user-attachments/assets/7d3e873b-99f5-461e-a14b-e2421add8989" />
+
 
 ---
 
@@ -66,12 +69,6 @@ python main.py
 
 Este proyecto fue desarrollado como Proyecto Final para el curso de **Programación 1** en la **Universidad Mesoamericana (UMES)**.
 
-* **[Bryan Josue Noguera Molina]** - *Desarrollador (Módulo de Ventas)* - GitHub: [@tu_usuario](https://www.google.com/search?q=https://github.com/tu_usuario)
-* **[Compañero 1]** - *Desarrollador (Módulo de Clientes)* - GitHub: [@usuario_compañero1](https://www.google.com/search?q=https://github.com/usuario_companero1)
-* **[Compañero 2]** - *Desarrollador (Módulo de Productos)* - GitHub: [@usuario_compañero2](https://www.google.com/search?q=https://github.com/usuario_companero2)
-
----
-
-*Hecho con mucho ☕ y código.*
-
-```
+* **[Bryan Josue Noguera Molina]**
+* **[Angel Adolfo Colop Pastor]**
+* **[Francis Asaf Estrada Francia]**
