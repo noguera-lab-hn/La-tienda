@@ -1,14 +1,8 @@
 [
-  {
-    "NIT": "202607038",
-    "Nombre": "juan",
-    "Telefono": "444444",
-    "Correo": "asdf a"
-  },
-  {
-    "NIT": "202607038",
-    "Nombre": "lkhug",
-    "Telefono": "iougyh",
-    "Correo": "poutgy"
-  }
+    {
+        "nit": "1245525",
+        "nombre": "Pablito",
+        "telefono": "38548394",
+        "email": "otroemailrandom@gmail.com"
+    }
 ]
