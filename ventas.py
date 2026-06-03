@@ -1,54 +1,55 @@
 # ==============================================================================
-#                           MODULO DE VENTAS
-#                       BRYAN jOSUE NOGUERA MOLINA
-#                               30/5/2026
+#                           MÓDULO DE VENTAS
+#                       BRYAN JOSUE NOGUERA MOLINA
+#                               2/6/2026
 # ==============================================================================
 
-
-
-
-
-
-# FASE 3: CONFIRMACIÓN DE VENTA, DESCUENTO DE STOCK Y FACTURA TXT
-
-# FASE 3: Importamos 'os' para crear carpetas en la computadora
 import os
-# FASE 3: Importamos 'datetime' para obtener la fecha y hora de la compra
+import json
 from datetime import datetime
 
-# Base de datos "de mentira" para pruebas
-productos_prueba = [
-    {"codigo": "P001", "nombre": "Azúcar 1lb", "precio": 6.50, "stock": 24},
-    {"codigo": "P002", "nombre": "Frijol Negro", "precio": 8.00, "stock": 15}
-]
+# ==============================================================================
+# FUNCIONES AUXILIARES PARA LEER Y GUARDAR JSON
+# ==============================================================================
 
-# NUEVO EN FASE 3: Simulamos el archivo ventas.json para saber cuántas ventas llevamos
-ventas_prueba = []
+def cargar_datos(ruta):
+    # Intentamos abrir el archivo. Si no existe, devolvemos una lista vacía.
+    try:
+        with open(ruta, "r", encoding="utf-8") as archivo:
+            return json.load(archivo)
+    except FileNotFoundError:
+        return []
+
+def guardar_datos(ruta, datos):
+    # Asegurarnos de que la carpeta 'datos' exista antes de guardar
+    if not os.path.exists("datos"):
+        os.makedirs("datos")
+    try:
+        with open(ruta, "w", encoding="utf-8") as archivo:
+            json.dump(datos, archivo, indent=4, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error al guardar en {ruta}: {e}")
+
 
 # ==============================================================================
-# NUEVA FUNCIÓN AUXILIAR DE LA FASE 3: CREAR EL ARCHIVO .TXT
+# FUNCIÓN PARA CREAR EL ARCHIVO .TXT
 # ==============================================================================
 def generar_factura_txt(venta_final):
     # Validamos si la carpeta "facturas" NO existe en la computadora
     if not os.path.exists("facturas"):
-        # Si no existe, le pedimos al sistema operativo que la cree
         os.makedirs("facturas")
         
-    # Armamos el nombre del archivo usando el ID de la venta. Ej: "facturas/factura_V0001.txt"
+    # Armamos el nombre del archivo usando el ID de la venta.
     ruta_archivo = f"facturas/factura_{venta_final['id_venta']}.txt"
     
-    # Intentamos crear y escribir el archivo
     try:
-        # 'w' significa Write (escribir). encoding="utf-8" permite guardar tildes y eñes sin error.
         with open(ruta_archivo, "w", encoding="utf-8") as archivo:
-            # Empezamos a escribir línea por línea dentro del archivo de texto
-            archivo.write("=== TU TIENDA ===\n") # \n significa 'salto de línea' (como presionar Enter)
+            archivo.write("=== TU TIENDA ===\n")
             archivo.write(f"Factura No:   {venta_final['id_venta']}\n")
             archivo.write(f"Fecha y Hora: {venta_final['fecha']}\n")
             archivo.write(f"NIT Cliente:  {venta_final['nit_cliente']}\n")
             archivo.write("--------------------------------\n")
             
-            # Recorremos el carrito guardado en la venta para imprimir cada producto
             for item in venta_final['items']:
                 archivo.write(f"{item['cantidad']}x {item['nombre']} - Q{item['subtotal']}\n")
                 
@@ -67,35 +68,38 @@ def generar_factura_txt(venta_final):
 # ==============================================================================
 # FUNCIÓN PRINCIPAL DEL MÓDULO DE VENTAS
 # ==============================================================================
-def iniciar_nueva_venta_fase3():
+def iniciar_nueva_venta():
     print("--- INICIANDO NUEVA VENTA ---")
     
-    # (FASE 1) Pedimos NIT
-    nit_cliente = input("Ingrese NIT del cliente (Deje vacío para CF): ")
+    # 1. Cargamos las bases de datos REALES al iniciar la transacción
+    productos = cargar_datos("datos/productos.json")
+    ventas = cargar_datos("datos/ventas.json")
+    
+    nit_cliente = input("Ingrese NIT del cliente (Deje vacío para CF): ").strip()
     if nit_cliente == "":
         nit_cliente = "CF"
         
     carrito = []
     
-    # Bucle infinito del menú
     while True:
         print("\n--- MENÚ DE VENTA ---")
         print("1. Agregar producto")
         print("2. Mostrar carrito (con totales)")
         print("3. Quitar producto")
-        print("4. Confirmar venta y Facturar") # NUEVO EN FASE 3
-        print("5. Cancelar venta en curso")    # NUEVO EN FASE 3
+        print("4. Confirmar venta y Facturar") 
+        print("5. Cancelar venta en curso")    
         
-        opcion = input("Elige una opción: ")
+        opcion = input("Elige una opción: ").strip()
         
         # ----------------------------------------------------
-        # OPCIÓN 1: AGREGAR PRODUCTO (Fases 1 y 2)
+        # OPCIÓN 1: AGREGAR PRODUCTO 
         # ----------------------------------------------------
         if opcion == "1":
-            codigo_buscar = input("Ingresa el código del producto (ej. P001): ").upper()
+            codigo_buscar = input("Ingresa el código del producto (ej. P001): ").upper().strip()
             
             producto_encontrado = None 
-            for p in productos_prueba:
+            # Ahora iteramos sobre el inventario real 'productos'
+            for p in productos:
                 if p["codigo"] == codigo_buscar:
                     producto_encontrado = p
                     break 
@@ -127,7 +131,7 @@ def iniciar_nueva_venta_fase3():
                     print("Error: Por favor ingresa únicamente números enteros.")
                 
         # ----------------------------------------------------
-        # OPCIÓN 2: MOSTRAR CARRITO Y TOTALES (Fase 2)
+        # OPCIÓN 2: MOSTRAR CARRITO Y TOTALES
         # ----------------------------------------------------
         elif opcion == "2":
             print("\n--- TU CARRITO ACTUAL ---")
@@ -148,13 +152,13 @@ def iniciar_nueva_venta_fase3():
                 print(f"TOTAL A PAGAR: Q{total}")
                 
         # ----------------------------------------------------
-        # OPCIÓN 3: QUITAR PRODUCTO (Fase 2)
+        # OPCIÓN 3: QUITAR PRODUCTO
         # ----------------------------------------------------
         elif opcion == "3":
             if len(carrito) == 0:
                 print("El carrito ya está vacío.")
             else:
-                codigo_quitar = input("Ingresa el código del producto a quitar: ").upper()
+                codigo_quitar = input("Ingresa el código del producto a quitar: ").upper().strip()
                 borrado = False 
                 
                 for i in range(len(carrito)):
@@ -168,7 +172,7 @@ def iniciar_nueva_venta_fase3():
                     print("Ese producto no se encuentra en tu carrito.")
 
         # ----------------------------------------------------
-        # OPCIÓN 4: CONFIRMAR VENTA (NUEVO EN FASE 3)
+        # OPCIÓN 4: CONFIRMAR VENTA Y GUARDAR
         # ----------------------------------------------------
         elif opcion == "4":
             if len(carrito) == 0:
@@ -176,27 +180,23 @@ def iniciar_nueva_venta_fase3():
             else:
                 print("\nProcesando la venta...")
                 
-                # Paso A: Volvemos a calcular los totales exactos
                 suma_subtotal = sum(item["subtotal"] for item in carrito)
                 iva = round(suma_subtotal * 0.12, 2)
                 total = round(suma_subtotal + iva, 2)
                 
-                # Paso B: Generar ID único (Ej: V0001). zfill(4) rellena con ceros a la izquierda
-                siguiente_numero = len(ventas_prueba) + 1
+                # LA SOLUCIÓN AL PROBLEMA DE LA FACTURA ESTÁ AQUÍ:
+                # Calculamos el ID basándonos en la longitud real del archivo JSON de ventas
+                siguiente_numero = len(ventas) + 1
                 id_venta = f"V{str(siguiente_numero).zfill(4)}"
                 
-                # Paso C: Obtener fecha y hora real
                 fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 
-                # Paso D: Restar el stock del inventario principal permanentemente (Requerimiento 7)
                 for item in carrito:
-                    for p in productos_prueba:
+                    for p in productos:
                         if p["codigo"] == item["codigo"]:
-                            # Le restamos al stock actual la cantidad que se acaba de vender
                             p["stock"] = p["stock"] - item["cantidad"]
-                            break # Rompemos el ciclo interno porque ya encontramos el producto
+                            break 
                             
-                # Paso E: Crear el registro oficial de la venta
                 nueva_venta = {
                     "id_venta": id_venta,
                     "fecha": fecha_actual,
@@ -207,33 +207,28 @@ def iniciar_nueva_venta_fase3():
                     "total": total
                 }
                 
-                # Agregamos esta venta a nuestra lista histórica de ventas
-                ventas_prueba.append(nueva_venta)
+                # Insertamos la nueva venta en la lista en memoria RAM
+                ventas.append(nueva_venta)
                 
-                # Paso F: Generar el archivo TXT llamando a nuestra nueva función
+                # 2. ESCRITURA: Sobrescribimos los JSON con los nuevos datos permanentemente
+                guardar_datos("datos/ventas.json", ventas)
+                guardar_datos("datos/productos.json", productos)
+                
                 generar_factura_txt(nueva_venta)
                 
-                print("¡Venta completada y stock descontado con éxito!")
-                
-                # Salimos del bucle porque la venta ya terminó
+                print("¡Venta completada, inventario actualizado y datos guardados con éxito!")
                 break 
 
         # ----------------------------------------------------
-        # OPCIÓN 5: CANCELAR Y SALIR (Fase 1 y 3)
+        # OPCIÓN 5: CANCELAR Y SALIR 
         # ----------------------------------------------------
         elif opcion == "5":
-            # Requerimiento 8: Cancelar sin afectar registros ni stock
             print("Venta cancelada. No se ha modificado el inventario.")
             break 
             
         else:
             print("Opción incorrecta. Escribe del 1 al 5.")
-
-# Arrancamos el programa
-iniciar_nueva_venta_fase3()
-
-# Solo para comprobar que el código funciona, imprimiremos el inventario al final
-# para que veas cómo el stock sí bajó después de que procesaste la venta.
-print("\n--- INVENTARIO DESPUÉS DE LA VENTA ---")
-for p in productos_prueba:
-    print(f"{p['nombre']} - Stock restante: {p['stock']}")
+            
+            
+if __name__ == "__main__":
+    iniciar_nueva_venta()
