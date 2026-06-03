@@ -24,13 +24,11 @@ El objetivo principal es digitalizar el control de ventas, inventario y clientes
    Abre tu terminal y ejecuta el siguiente comando para descargar el código a tu máquina local:
    ```bash
    git clone https://github.com/noguera-lab-hn/La-tienda.git
-
-```
+   ```
 
 2. **Navegar a la carpeta del proyecto:**
 ```bash
 cd la-tienda
-
 ```
 
 
@@ -38,7 +36,6 @@ cd la-tienda
 Para iniciar el programa, corre el archivo principal:
 ```bash
 python main.py
-
 ```
 
 
